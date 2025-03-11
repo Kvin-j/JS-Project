@@ -1,0 +1,474 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    background-color: black;
+    margin: 0;
+    font-family: "Poppins", serif;
+    font-style: normal;
+  }
+  body .main {
+    display: flex;
+  }
+  body .main .profile-nav {
+    position: fixed;
+    margin: 5% 5%;
+    display: flex;
+    flex-direction: column;
+  }
+  body .main .profile-nav .profile {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    margin-bottom: 10%;
+  }
+  body .main .profile-nav .profile .notify {
+    width: 15%;
+    height: 50%;
+  }
+  body .main .profile-nav .profile .profilepic {
+    width: 45%;
+    margin-bottom: 8%;
+  }
+  body .main .profile-nav .nav {
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 0.3%;
+    justify-content: space-between;
+    text-decoration: none;
+    margin-top: 25%;
+  }
+  body .main .profile-nav .nav a {
+    text-decoration: none;
+    color: rgb(114.75, 114.75, 114.75);
+    margin-top: 15%;
+  }
+  body .main .profile-nav .nav a.active {
+    color: white;
+  }
+  body .main .profile-nav .nav a:hover {
+    color: white;
+  }
+  body .main .expenses {
+    margin-left: 25%;
+    flex: 3;
+    display: flex;
+    background-color: white;
+    margin-top: 2.5%;
+    margin-right: 2.5%;
+    border-radius: 25px;
+  }
+  body .main .expenses .left {
+    flex: 1.5;
+    margin: 7% 7%;
+  }
+  body .main .expenses .left .exphead {
+    display: flex;
+    justify-content: space-between;
+  }
+  body .main .expenses .left .exphead .wgtadjust h2 {
+    font-size: 180%;
+    letter-spacing: 1px;
+  }
+  body .main .expenses .left .exphead .wgtadjust p {
+    font-weight: 200;
+    font-size: small;
+  }
+  body .main .expenses .left .graph {
+    margin-top: -35px;
+    margin-bottom: 10px;
+    margin-left: 5px;
+  }
+  body .main .expenses .left .graph .chart {
+    display: flex;
+    height: 150px;
+    gap: 6px;
+    align-items: flex-end;
+  }
+  body .main .expenses .left .graph .bar {
+    flex: 1;
+    background-color: #E5EEFF;
+    transition: all 0.3s;
+  }
+  body .main .expenses .left .graph .bar:nth-child(19) {
+    background-color: #2D5BFF;
+  }
+  body .main .expenses .left .graph .bar:hover {
+    background-color: #2D5BFF;
+  }
+  body .main .expenses .left .Today {
+    padding-top: 10%;
+  }
+  body .main .expenses .left .Today .todayhead {
+    display: flex;
+    justify-content: space-between;
+  }
+  body .main .expenses .left .Today .todayhead h5 {
+    margin-left: 2%;
+  }
+  body .main .expenses .left .Today hr {
+    margin: 2%;
+    width: 100%;
+  }
+  body .main .expenses .left .Today .grocery {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+  }
+  body .main .expenses .left .Today .grocery .imagetext {
+    display: flex;
+  }
+  body .main .expenses .left .Today .grocery .imagetext img {
+    width: 7%;
+  }
+  body .main .expenses .left .Today .grocery .imagetext .txt {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    padding-left: 1.5%;
+  }
+  body .main .expenses .left .Today .grocery .imagetext .txt h5 {
+    font-weight: 500;
+    font-size: small;
+  }
+  body .main .expenses .left .Today .grocery .imagetext .txt p {
+    font-weight: 200;
+    font-size: smaller;
+  }
+  body .main .expenses .left .Today .transportation {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+  }
+  body .main .expenses .left .Today .transportation .imagetext {
+    display: flex;
+  }
+  body .main .expenses .left .Today .transportation .imagetext img {
+    width: 7%;
+  }
+  body .main .expenses .left .Today .transportation .imagetext .txt {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    padding-left: 1.5%;
+  }
+  body .main .expenses .left .Today .transportation .imagetext .txt h5 {
+    font-weight: 500;
+    font-size: small;
+  }
+  body .main .expenses .left .Today .transportation .imagetext .txt p {
+    font-weight: 200;
+    font-size: smaller;
+  }
+  body .main .expenses .left .Today .housing {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+  }
+  body .main .expenses .left .Today .housing .imagetext {
+    display: flex;
+  }
+  body .main .expenses .left .Today .housing .imagetext img {
+    width: 7%;
+  }
+  body .main .expenses .left .Today .housing .imagetext .txt {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    padding-left: 1.5%;
+  }
+  body .main .expenses .left .Today .housing .imagetext .txt h5 {
+    font-weight: 500;
+    font-size: small;
+  }
+  body .main .expenses .left .Today .housing .imagetext .txt p {
+    font-weight: 200;
+    font-size: smaller;
+  }
+  body .main .expenses .left .Monday {
+    padding-top: 10%;
+  }
+  body .main .expenses .left .Monday .todayhead {
+    display: flex;
+    justify-content: space-between;
+  }
+  body .main .expenses .left .Monday .todayhead h5 {
+    margin-left: 2%;
+  }
+  body .main .expenses .left .Monday hr {
+    margin: 2%;
+    width: 100%;
+  }
+  body .main .expenses .left .Monday .food {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+  }
+  body .main .expenses .left .Monday .food .imagetext {
+    display: flex;
+  }
+  body .main .expenses .left .Monday .food .imagetext img {
+    width: 7%;
+  }
+  body .main .expenses .left .Monday .food .imagetext .txt {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    padding-left: 1.5%;
+  }
+  body .main .expenses .left .Monday .food .imagetext .txt h5 {
+    font-weight: 500;
+    font-size: small;
+  }
+  body .main .expenses .left .Monday .food .imagetext .txt p {
+    font-weight: 200;
+    font-size: smaller;
+  }
+  body .main .expenses .left .Monday .entertainment {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+  }
+  body .main .expenses .left .Monday .entertainment .imagetext {
+    display: flex;
+  }
+  body .main .expenses .left .Monday .entertainment .imagetext img {
+    width: 7%;
+  }
+  body .main .expenses .left .Monday .entertainment .imagetext .txt {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    padding-left: 1.5%;
+  }
+  body .main .expenses .left .Monday .entertainment .imagetext .txt h5 {
+    font-weight: 500;
+    font-size: small;
+  }
+  body .main .expenses .left .Monday .entertainment .imagetext .txt p {
+    font-weight: 200;
+    font-size: smaller;
+  }
+  body .main .expenses .right {
+    flex: 1;
+    background-color: rgba(235, 247, 243, 0.938);
+    padding: 7% 7%;
+    border-radius: 0 25px 25px 0;
+    display: flex;
+    flex-direction: column;
+  }
+  body .main .expenses .right .barfill {
+    display: flex;
+    flex-direction: column;
+  }
+  body .main .expenses .right .barfill .fd .progress {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+  }
+  body .main .expenses .right .barfill .fd .progress h6 {
+    font-weight: 500;
+    font-size: medium;
+  }
+  body .main .expenses .right .barfill .fd .progress p {
+    font-weight: 400;
+    font-size: medium;
+  }
+  body .main .expenses .right .barfill .fd .fill {
+    background: #7bcfcf;
+    height: 6px;
+    margin-top: 2px;
+    border-radius: 5px;
+    margin: 5px;
+  }
+  body .main .expenses .right .barfill .fd .fill span {
+    display: block;
+    height: 100%;
+    background: #23996e;
+    border-radius: 5px;
+  }
+  body .main .expenses .right .barfill .sd .progress {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+  }
+  body .main .expenses .right .barfill .sd .progress h6 {
+    font-weight: 500;
+    font-size: medium;
+  }
+  body .main .expenses .right .barfill .sd .progress p {
+    font-weight: 400;
+    font-size: medium;
+  }
+  body .main .expenses .right .barfill .sd .fill {
+    background: #7bcfcf;
+    height: 6px;
+    margin-top: 2px;
+    border-radius: 5px;
+    margin: 5px;
+  }
+  body .main .expenses .right .barfill .sd .fill span {
+    display: block;
+    height: 100%;
+    background: #23996e;
+    border-radius: 5px;
+  }
+  body .main .expenses .right .barfill .hd .progress {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+  }
+  body .main .expenses .right .barfill .hd .progress h6 {
+    font-weight: 500;
+    font-size: medium;
+  }
+  body .main .expenses .right .barfill .hd .progress p {
+    font-weight: 400;
+    font-size: medium;
+  }
+  body .main .expenses .right .barfill .hd .fill {
+    background: #7bcfcf;
+    height: 6px;
+    margin-top: 2px;
+    border-radius: 5px;
+    margin: 5px;
+  }
+  body .main .expenses .right .barfill .hd .fill span {
+    display: block;
+    height: 100%;
+    background: #23996e;
+    border-radius: 5px;
+  }
+  body .main .expenses .right .barfill .td .progress {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+  }
+  body .main .expenses .right .barfill .td .progress h6 {
+    font-weight: 500;
+    font-size: medium;
+  }
+  body .main .expenses .right .barfill .td .progress p {
+    font-weight: 400;
+    font-size: medium;
+  }
+  body .main .expenses .right .barfill .td .fill {
+    background: #7bcfcf;
+    height: 6px;
+    margin-top: 2px;
+    border-radius: 5px;
+    margin: 5px;
+  }
+  body .main .expenses .right .barfill .td .fill span {
+    display: block;
+    height: 100%;
+    background: #23996e;
+    border-radius: 5px;
+  }
+  body .main .expenses .right .barfill .vd .progress {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+  }
+  body .main .expenses .right .barfill .vd .progress h6 {
+    font-weight: 500;
+    font-size: medium;
+  }
+  body .main .expenses .right .barfill .vd .progress p {
+    font-weight: 400;
+    font-size: medium;
+  }
+  body .main .expenses .right .barfill .vd .fill {
+    background: #7bcfcf;
+    height: 6px;
+    margin-top: 2px;
+    border-radius: 5px;
+    margin: 5px;
+  }
+  body .main .expenses .right .barfill .vd .fill span {
+    display: block;
+    height: 100%;
+    background: #23996e;
+    border-radius: 5px;
+  }
+  body .main .expenses .right .tips {
+    margin-top: 70%;
+    background: #d4f3f3;
+    border-radius: 16px;
+  }
+  body .main .expenses .right .tips .writing {
+    margin-top: 1px;
+    position: relative;
+    padding: 50px 60px;
+    margin-right: -9px;
+    margin-left: -30px;
+  }
+  body .main .expenses .right .tips .button {
+    margin-left: 55px;
+    margin-top: -40px;
+    padding: 70px 70px;
+    appearance: none;
+    background-color: #000000;
+    border: 1px solid rgba(27, 31, 35, 0.15);
+    border-radius: 6px;
+    box-shadow: rgba(27, 31, 35, 0.1) 0 1px 0;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-family: -apple-system, system-ui, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+    padding: 6px 24px;
+    text-align: center;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: middle;
+    white-space: nowrap;
+  }
+  body .main .expenses .right .tips .button:focus:not(:focus-visible):not(.focus-visible) {
+    box-shadow: none;
+    outline: none;
+  }
+  body .main .expenses .right .tips .button:hover {
+    background-color: #0b7377;
+  }
+  body .main .expenses .right .tips .button:focus {
+    box-shadow: rgba(46, 164, 79, 0.4) 0 0 0 3px;
+    outline: none;
+  }
+  body .main .expenses .right .tips .button:disabled {
+    background-color: #94d3a2;
+    border-color: rgba(27, 31, 35, 0.1);
+    color: rgba(255, 255, 255, 0.8);
+    cursor: default;
+  }
+  body .main .expenses .right .tips .button:active {
+    background-color: #0b7377;
+    box-shadow: rgba(20, 70, 32, 0.2) 0 1px 0 inset;
+  }
+  body .tipbox {
+    position: absolute;
+    bottom: 100px;
+    right: 200px;
+    width: 100px;
+    height: 100px;
+    z-index: 0;
+  }
+  body .tipplant {
+    position: absolute;
+    bottom: 107px;
+    right: 90px;
+    width: 100px;
+    height: 100px;
+    z-index: 0;
+  }
+  
+  /*# sourceMappingURL=dashstyle.css.map */
+  
